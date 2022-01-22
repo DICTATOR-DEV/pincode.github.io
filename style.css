@@ -109,7 +109,7 @@ section:nth-child(even){
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap:6rem;
 }
  
 .pincode .row .image{
@@ -117,17 +117,17 @@ section:nth-child(even){
 }
 
 .pincode .row .image img{
-    width: 100%;
+    width: 70%;
 }
 
 .pincode .row form{
-    flex:1 1 45rem;
-    background: rgb(24, 163, 163);
+    flex:1 1rem;
+    background: rgb(218, 188, 123);
     border:var(--border);
     box-shadow: var(--box-shadow);
     text-align: center;
-    padding: 2rem;
-    border-radius: .5rem;
+    padding: 1rem;
+    border-radius: 5rem;
 }
 
 .pincode .row form h3{
@@ -136,20 +136,14 @@ section:nth-child(even){
     font-size: 3rem;
 }
 
-.pincode .row form .row{
-    width: 100%;
-    margin:.7rem 0;
-    border-radius: .5rem;
-    border:var(--border);
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 1rem;
+.pincode .row form h4{
+    color:var(--black);
+    padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
-.pincode .row form .btn{
-    padding:1rem 4rem;
-}
+
+
 
 .footer .box-container{
     display: grid;
