@@ -217,11 +217,37 @@ header #menu{
     z-index: -1;
 }
 
-.doctor{
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
+}
+
+.doctors .box-container .box{
     text-align: center;
-    background:url(doctors.jpg) no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    background:#f1c40f;
+    border-radius: .5rem;
+    border:var(--border);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+}
+
+.doctors .box-container .box img{
+    height: 20rem;
+    border:var(--border);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.doctors .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.doctors .box-container .box span{
+    color:var(--green);
+    font-size: 1.5rem;
 }
 
 .departments .box-container{
@@ -233,6 +259,7 @@ header #menu{
 .departments .box-container .box{
     border:var(--border);
     box-shadow: var(--box-shadow);
+    background: rgb(225, 139, 228);
     border-radius: .5rem;
     padding: 2rem;
 }
