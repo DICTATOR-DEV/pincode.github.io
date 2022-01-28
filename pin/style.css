@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
-:root{
-    --yellow:#0f5aa0;
-    --black:rgb(185, 29, 29);
-    --light-color:rgb(151, 17, 17);
-    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
-    --text-shadow:.4rem .4rem 0 rgba(231, 216, 216, 0.2);
-    --border:.2rem solid var(--green);
-}
-
 *{
     font-family: 'Poppins',sans-serif;
     margin:0; padding: 0;
@@ -32,6 +23,7 @@ section{
 
 section:nth-child(even){
     background: #eca012;
+    border: solid 1px rgb(17, 14, 14);
 }
 
 .heading{
@@ -44,33 +36,25 @@ section:nth-child(even){
     letter-spacing: .4rem;
 }
 
-.heading span{
-    text-transform: uppercase;
-    color:var(--green);
-}
 
 .header{
     padding:2rem 9%;
     position: fixed;
     top:0; left: 0; right: 0;
     z-index: 1000;
-    box-shadow: 0 .5rem 1.5rem rgba(202, 53, 53, 0.1);
+    box-shadow: 0 .5rem 1.5rem rgba(14, 6, 6, 0.1);
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     justify-content: space-between;
     background: rgb(231, 247, 14);
+    border: solid 1px rgb(243, 34, 6);
 }
 
 .header .logo{
     font-size: 2.5rem;
-    color: var(--black);
+    color: #000;
 }
-
-.header .logo i{
-    color: var(--green);
-}
-
 
 .pincode .row{
     display: flex;
@@ -84,51 +68,36 @@ section:nth-child(even){
 }
 
 .pincode .row .image img{
-    width: 100%;
+    width: 70%;
 }
 
 .pincode .row form{
     flex:1 1 45rem;
-    background: rgb(24, 163, 163);
+    background-image: linear-gradient( to right, rgb(236, 156, 6),rgba(255, 255, 255, 0.781),green);
     border:var(--border);
     box-shadow: var(--box-shadow);
     text-align: center;
-    padding: 2rem;
-    border-radius: .5rem;
+    padding: 4rem;
+    border: solid 1px rgb(17, 14, 14);
+    border-radius: 10rem;
+}
+
+p {
+    padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .pincode .row form h3{
-    color:var(--black);
-    padding-bottom: 1rem;
+    color:rgb(8, 32, 252);
+    padding-bottom: 3rem;
     font-size: 3rem;
 }
 
-.pincode .row form .row .this{
-    width: 100%;
-    margin:.7rem 0;
-    border-radius: .5rem;
-    border:var(--border);
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 1rem;
+select {
+    width: 50%;
 }
 
-select {
-    text-align: center;
-    border-radius: 15px;
-    border: none;
-    background-color: whitesmoke;
-    color: rgb(2, 2, 2);
-    font-size: 17px;
-    line-height: 25px;
-    padding: 2px 5px;
-    margin: 15px 0px;
-    padding: 5px;
-    width: 50%;
-    }
-    
-.footer .box-container{
+.footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap:2rem;
@@ -136,21 +105,17 @@ select {
 
 .footer .box-container .box h3{
     font-size: 2.5rem;
-    color:var(--black);
+    color:red;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a{
     display: block;
     font-size: 1.5rem;
-    color:var(--light-color);
+    color:rgb(46, 30, 9);
     padding: 1rem 0;
 }
 
-.footer .box-container .box a i{
-    padding-right: .5rem;
-    color:var(--green);
-}
 
 .footer .box-container .box a:hover i{
     padding-right:2rem;
@@ -163,10 +128,7 @@ select {
     text-align: center;
     font-size: 2rem;
     color:var(--light-color);
-    border-top: .1rem solid rgba(0, 0, 0, .1);
+    border-top: 1rem solid rgba(0, 0, 0, .1);
 }
 
-.footer .credit span{
-    color:var(--green);
-}
 
