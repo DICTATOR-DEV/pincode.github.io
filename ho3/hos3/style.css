@@ -1,5 +1,5 @@
 :root{
-    --gradient:linear-gradient(90deg, #f1c40f, #f39c12);
+    --gradient:linear-gradient(90deg, orange,white,green);
 }
 
 *{
@@ -13,8 +13,7 @@
 }
 
 *::selection{
-    background:#f39c12;
-    color:rgb(189, 27, 27);
+color:rgb(189, 27, 27);
 }
 
 html{
@@ -22,22 +21,15 @@ html{
     overflow-x: hidden;
 }
 
-html::-webkit-scrollbar{
-    width:1.5rem;
-}
-
-html::-webkit-scrollbar-track{
-    background:#333;
-}
-
-html::-webkit-scrollbar-thumb{
-    background:linear-gradient(#f1c40f, #b312f3);
-}
 
 section{
     min-height: 100vh;
     padding:1rem 7%;
     padding-top:6rem;
+}
+
+section:nth-child(odd){
+    background-image: linear-gradient(orange,white,green);   
 }
 
 .heading{
@@ -58,6 +50,7 @@ header{
     padding:1.5rem 7%;
     background:var(--gradient);
     box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    border:2px solid rgb(112, 100, 100);
 }
 
 header .logo{
@@ -78,7 +71,7 @@ header .navbar ul li{
 
 header .navbar ul li a{
     font-size: 2rem;
-    color:#fff;
+    color:rgb(218, 15, 15);
 }
 
 header .navbar ul li a.active,
@@ -114,7 +107,7 @@ header #menu{
 }
 
 .home .content h1{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color:black;
     line-height: 1.8;
     text-shadow: var(--text-shadow);
@@ -171,7 +164,8 @@ header #menu{
     box-shadow: var(--box-shadow);
     border-radius: 5rem;
     padding:2.5rem;
-    background: rgb(225, 139, 228);
+    border:2px solid black;
+    background:#cec780;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -183,7 +177,7 @@ header #menu{
     width: 10rem;
     border-radius: 50%;
     object-fit: cover;
-    border:.5rem solid rgb(241, 243, 247);
+    border:.5rem solid rgb(0, 0, 0);
 }
 
 .review .box-container .box h3{
@@ -193,7 +187,7 @@ header #menu{
 }
 
 .review .box-container .box .stars i{
-    color:rgb(206, 228, 10);
+    color:rgb(230, 255, 4);
     font-size: 1.5rem;
 }
 
@@ -220,22 +214,24 @@ header #menu{
 .doctors .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:2rem;
+    gap:2rem
 }
 
 .doctors .box-container .box{
     text-align: center;
-    background:#f1c40f;
-    border-radius: 5rem;
-    border:var(--border);
-    box-shadow: var(--box-shadow);
-    padding:2rem;
+    height: 250px;
+    width: 250px;
+    border:2px solid black;
+    background-color: #111;
+    border-radius: 50%;
+    color: #fcd600;
 }
 
 .doctors .box-container .box img{
-    height: 20rem;
-    border:var(--border);
-    border-radius: 5rem;
+    height: 150px;
+    width: 150px;
+    border:1px solid black;
+    border-radius: 50%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -259,15 +255,17 @@ header #menu{
 .departments .box-container .box{
     border:var(--border);
     box-shadow: var(--box-shadow);
-    background: rgb(225, 139, 228);
+    background: #cec780;
     border-radius: 5rem;
-    padding: 2rem;
+    padding: 5rem;
+    border:2px solid black;
 }
 
 .departments .box-container .box .image{
     height: 20rem;
     overflow:hidden;
     border-radius: 5rem;
+    border:2px solid black;
 }
 
 .departments .box-container .box .image img{
@@ -313,7 +311,7 @@ header #menu{
     padding:1rem 0;
 }
 .footer{
-    background:rgb(255, 13, 13);
+    background:#486ce2;
 }
 
 .footer .box-container{
@@ -360,16 +358,15 @@ header #menu{
     padding:2rem 1rem;
     font-size: 2rem;
     color:#fff;
-    background:#111;
+    background: #800020;
     text-align: center;
     font-weight: normal;
-    padding-bottom: 9rem;
+    padding-bottom: 4rem;
 }
 
 .footer .credit a{
     color:#f39c12
 }
-
 
 
 

@@ -56,6 +56,11 @@ section:nth-child(even){
     color: #000;
 }
 
+.header .logo i{
+    color: var(--green);
+}
+
+
 .pincode .row{
     display: flex;
     align-items: center;
@@ -72,15 +77,15 @@ section:nth-child(even){
 }
 
 .pincode .row form{
-    flex:1 1 45rem;
-    background-image: linear-gradient( to right, rgb(236, 156, 6),rgba(255, 255, 255, 0.781),green);
-    border:var(--border);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    padding: 4rem;
-    border: solid 1px rgb(17, 14, 14);
-    border-radius: 10rem;
+        max-width: 450px;
+        background: #6896ca;
+        padding: 30px;
+        margin: 50px auto;
+        box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+        border-radius: 10px;
+        border: 6px solid #305A72;
 }
+
 
 p {
     padding-bottom: 1rem;
@@ -89,14 +94,34 @@ p {
 
 .pincode .row form h3{
     color:rgb(8, 32, 252);
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     font-size: 3rem;
 }
 
 select {
-    width: 50%;
+    width: 100%;
 }
 
+
+button {
+    background-color:  #b312f3;
+    border: none;
+    padding: 1px;
+    margin: auto;
+    justify-content: center;
+    border-radius: 15px;
+    border: solid 1px rgb(17, 14, 14);
+    cursor: pointer;
+    color:  #f1c40f;
+    width: 10%;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: rgb(224, 9, 9);
+  }
+
+    
 .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));

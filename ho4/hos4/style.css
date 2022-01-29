@@ -1,5 +1,5 @@
 :root{
-    --gradient:linear-gradient(90deg, #f1c40f, #f39c12);
+    --gradient:linear-gradient(90deg, #9b6140, #040303);
 }
 
 *{
@@ -13,8 +13,7 @@
 }
 
 *::selection{
-    background:#f39c12;
-    color:rgb(189, 27, 27);
+color:rgb(189, 27, 27);
 }
 
 html{
@@ -22,17 +21,6 @@ html{
     overflow-x: hidden;
 }
 
-html::-webkit-scrollbar{
-    width:1.5rem;
-}
-
-html::-webkit-scrollbar-track{
-    background:#333;
-}
-
-html::-webkit-scrollbar-thumb{
-    background:linear-gradient(#f1c40f, #b312f3);
-}
 
 section{
     min-height: 100vh;
@@ -40,10 +28,18 @@ section{
     padding-top:6rem;
 }
 
+section:nth-child(even){
+    background-image: linear-gradient( #eee7df, #DBD0C0);   
+}
+
+section:nth-child(odd){
+    background-image: linear-gradient( #9b614098, #04030383);   
+}
+
 .heading{
-    color:black;
+    color:rgb(0, 0, 0);
     padding:1rem;
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
 }
 
@@ -58,10 +54,11 @@ header{
     padding:1.5rem 7%;
     background:var(--gradient);
     box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    border:2px solid rgb(112, 100, 100);
 }
 
 header .logo{
-    color:rgb(14, 12, 12);
+    color:rgb(251, 255, 0);
     font-size: 2.5rem;
 }
 
@@ -78,12 +75,12 @@ header .navbar ul li{
 
 header .navbar ul li a{
     font-size: 2rem;
-    color:#fff;
+    color:rgb(218, 137, 15);
 }
 
 header .navbar ul li a.active,
 header .navbar ul li a:hover{
-    color:rgb(10, 8, 8);
+    color:rgb(255, 217, 5);
 }
 
 header #menu{
@@ -114,7 +111,7 @@ header #menu{
 }
 
 .home .content h1{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color:black;
     line-height: 1.8;
     text-shadow: var(--text-shadow);
@@ -147,14 +144,13 @@ header #menu{
 }
 
 .about .row .content h3{
-    color: black;
-    text-shadow: royalblue;
+    color: #fffefd;
     font-size: 4rem;
     line-height: 1.8;
 }
 
 .about .row .content p{
-    color: red;
+    color: rgb(253, 249, 0);
     padding:1rem 0;
     font-size: 1.5rem;
     line-height: 1.8;
@@ -171,7 +167,8 @@ header #menu{
     box-shadow: var(--box-shadow);
     border-radius: 5rem;
     padding:2.5rem;
-    background: rgb(225, 139, 228);
+    border:4px solid black;
+    background:#cec780;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -183,7 +180,7 @@ header #menu{
     width: 10rem;
     border-radius: 50%;
     object-fit: cover;
-    border:.5rem solid rgb(241, 243, 247);
+    border: 0.5rem solid rgb(252, 0, 0);
 }
 
 .review .box-container .box h3{
@@ -193,7 +190,7 @@ header #menu{
 }
 
 .review .box-container .box .stars i{
-    color:rgb(206, 228, 10);
+    color:rgb(230, 255, 4);
     font-size: 1.5rem;
 }
 
@@ -220,28 +217,29 @@ header #menu{
 .doctors .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:2rem;
+    gap:2rem
 }
 
 .doctors .box-container .box{
     text-align: center;
-    background:#f1c40f;
-    border-radius: 5rem;
-    border:var(--border);
-    box-shadow: var(--box-shadow);
-    padding:2rem;
+    height: 250px;
+    width: 250px;
+    border:4px solid black;
+    background-color: #7900FF;
+    border-radius: 25%;
+    color: #fcd600;
 }
 
 .doctors .box-container .box img{
-    height: 20rem;
-    border:var(--border);
-    border-radius: 5rem;
+    height: 150px;
+    width: 150px;
+    border:4px solid black;
+    border-radius: 40%;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.doctors .box-container .box h3{
-    color:var(--black);
+.doctors .box-container h3{
     font-size: 2.5rem;
 }
 
@@ -259,15 +257,19 @@ header #menu{
 .departments .box-container .box{
     border:var(--border);
     box-shadow: var(--box-shadow);
-    background: rgb(225, 139, 228);
+    background: #b9b25f;
     border-radius: 5rem;
-    padding: 2rem;
+    padding: 5rem;
+    border:4px solid black;
 }
 
 .departments .box-container .box .image{
-    height: 20rem;
+    height: 300px;
+    width: 300px;
     overflow:hidden;
-    border-radius: 5rem;
+    border-radius: 50%;
+    text-align: center;
+    border:4px solid black;
 }
 
 .departments .box-container .box .image img{
@@ -308,12 +310,12 @@ header #menu{
 
 .departments .box-container .box .content p{
     color:var(--light-color);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.8;
     padding:1rem 0;
 }
 .footer{
-    background:rgb(255, 13, 13);
+    background:#1572A1;
 }
 
 .footer .box-container{
@@ -359,11 +361,11 @@ header #menu{
 .footer .credit{
     padding:2rem 1rem;
     font-size: 2rem;
-    color:#fff;
-    background:#111;
+    color:rgb(209, 30, 30);
+    background: #9AD0EC;
     text-align: center;
     font-weight: normal;
-    padding-bottom: 9rem;
+    padding-bottom: 4rem;
 }
 
 .footer .credit a{
